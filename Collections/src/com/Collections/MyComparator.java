@@ -1,0 +1,21 @@
+package com.Collections;
+import java.util.Comparator;
+
+public class MyComparator implements Comparator<Object> {
+
+	@Override
+	public int compare(Object obj1, Object obj2) {
+		Integer I1 = (Integer) obj1;
+		Integer I2 = (Integer) obj2;
+		
+		// return I2.compareTo(I1);
+		// or
+		if (I1 < I2) {
+			return +1;
+		} else if (I1 > I2) {
+			return -1;
+		} else {
+			return 0;
+		}
+	}
+}
